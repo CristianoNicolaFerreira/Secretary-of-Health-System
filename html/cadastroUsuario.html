@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <title>Menu</title>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../css/estilo-menu.css">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>Cadastro Usuário</title>
+		<link rel="stylesheet" type="text/css" href="../css/estilo-menu.css">
         <link rel="stylesheet" type="text/css" href="../css/icones.css">
-    </head>
-    <body>
-        <header>
+		<link rel="stylesheet" type="text/css" href="../css/estilo-cadastro-user.css">
+	</head>
+	<body>
+		<!--Menu-->
+		<header>
             <nav>
                 <ul>
                     <li><a href="#"><span class="icon-house"></span>Início</a></li>
@@ -45,5 +47,35 @@
                 </ul>
             </nav>
         </header>
-    </body>
+        <!--Formulario-->
+        <div class="contem-formulario">
+        	<form action="#" method="POST" accept-charset="utf-8" class="formulario">
+        		<div>
+        			<div class="grupo">
+        				<input type="text" name="nome" id="nome">
+        				<label class="label" for="nome">Nome Completo:</label>
+        			</div>
+        			<div class="grupo">
+        				<input type="email" id="email" name="email">
+						<label class="label" for="email">E-mail:</label>
+        			</div>
+        			<div class="grupo">
+        				<input type="password" id="senha" name="senha">
+						<label class="label" for="senha">Senha:</label>
+        			</div>
+        			<div class="grupo">
+        				<input type="password" id="senha2" name="senha2">
+						<label class="label" for="senha2">Repetir Senha:</label>
+        			</div>
+        			<div>
+        				<input type="radio" name="nivel" id="comum" value="comum">
+						<label for="comum">Comum</label>
+						<input type="radio" name="nivel" id="admin" value="admin">
+						<label for="admin">Administrador</label>
+        			</div>
+        			<input type="submit" value="Enviar" class="bt-enviar">
+        		</div>
+        	</form>
+        </div>
+	</body>
 </html>

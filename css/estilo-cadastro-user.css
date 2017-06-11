@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif; 
+}
+
+body {
+  background: rgb(245, 255, 250);
+  font-family: sans-serif, arial;
+}
+
+.contem-formulario {
+  width: 100%;
+  padding: 80px; 
+}
+
+.contem-formulario .formulario {
+  width: 90%;
+  margin: auto; 
+}
+
+.contem-formulario .formulario .grupo {
+  position: relative;
+  margin-bottom: 20px; 
+}
