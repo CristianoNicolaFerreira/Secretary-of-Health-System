@@ -14,7 +14,12 @@ body {
 
 .contem-formulario {
   width: 100%;
-  padding: 80px; 
+  padding: 90px; 
+}
+
+.titulo {
+  text-align: center;
+  color: rgb(52, 73, 94); 
 }
 
 .contem-formulario .formulario {
@@ -25,4 +30,139 @@ body {
 .contem-formulario .formulario .grupo {
   position: relative;
   margin-bottom: 20px; 
+}
+
+.contem-formulario .formulario .grupo input[type="text"],
+.contem-formulario .formulario .grupo input[type="email"],
+.contem-formulario .formulario .grupo input[type="password"] {
+  font-size: 14px;
+  color: #000;
+  width: 100%;
+  outline: none;
+  padding: 8px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgb(52, 73, 94);
+}
+
+.contem-formulario .formulario .grupo input[type="text"]:focus, 
+.contem-formulario .formulario .grupo input[type="text"]:active,
+.contem-formulario .formulario .grupo input[type="email"]:focus,
+.contem-formulario .formulario .grupo input[type="email"]:active,
+.contem-formulario .formulario .grupo input[type="password"]:focus,
+.contem-formulario .formulario .grupo input[type="password"]:active {
+  outline: none;
+  border-bottom: 2px solid #2ECC71; 
+}
+
+/*
+.contem-formulario .formulario .grupo input[type="text"].error,
+.contem-formulario .formulario .grupo input[type="email"].error,
+.contem-formulario .formulario .grupo input[type="password"].error {
+  border-bottom: 3px solid #D32F2F; 
+}
+
+.contem-formulario .formulario .grupo input[type="text"].error + label,
+.contem-formulario .formulario .grupo input[type="email"].error + label,
+.contem-formulario .formulario .grupo input[type="password"].error + label {
+  color: #D32F2F; 
+}
+*/
+
+.contem-formulario .formulario .grupo label {
+  color: rgb(52, 73, 94); 
+}
+
+.contem-formulario .formulario .grupo label.label {
+  transition: all 0.5s ease;
+  margin-left: 15px;
+  font-size: 14px;
+  line-height: 16px;
+  position: absolute;
+  top: 16px;
+  left: 0; 
+}
+
+.contem-formulario .formulario .grupo label.label.active {
+  top: -12px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #B6B6B6; 
+}
+
+.contem-formulario .formulario .grupo.radio label {
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(52, 73, 94);
+  position: relative;
+  padding: 5px 15px 5px 51px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: all 1.3s ease; 
+}
+
+.contem-formulario .formulario .grupo.radio label:hover {
+  background: #98FB98; 
+}
+
+.contem-formulario .formulario .grupo.radio label:before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  border-radius: 50%;
+  border: 2px solid rgb(52, 73, 94); 
+}
+
+/*
+.contem-formulario .formulario .grupo.error label {
+  color: #D32F2F; 
+}
+
+.contem-formulario .formulario .grupo.error label:hover {
+  background: #98FB98; 
+}
+
+.contem-formulario .formulario .grupo.error label:before {
+  border: 2px solid #D32F2F; 
+}*/
+
+/*Esconde o icone do radio*/
+.contem-formulario .formulario .grupo.radio input[type="radio"] {
+  display: none; 
+}
+
+/*No radio, mostra o circulo, somente para o que nao esta selecionado*/
+.contem-formulario .formulario .grupo.radio input[type="radio"]:checked + label:before {
+  display: none; 
+}
+
+/*Mostra o radio que esta selecionado*/
+.contem-formulario .formulario .grupo.radio input[type="radio"]:checked + label {
+  padding: 5px 38.2%;
+  background: #2ECC71;
+  border-radius: 4px;
+  color: #000; 
+}
+
+.bt-enviar{
+  padding: 15px 30px;
+  cursor: pointer;
+  color: rgb(52, 73, 94);
+  border: none;
+  border-radius: 4px;
+  background-color: #2ECC71;
+  border-bottom: 4px solid #27AE60;
+  margin-bottom: 20px;
+  margin-left: 45%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.bt-enviar:hover{
+  background-color: #98FB98;
+  color: #000
 }

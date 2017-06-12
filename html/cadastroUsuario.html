@@ -49,28 +49,29 @@
         </header>
         <!--Formulario-->
         <div class="contem-formulario">
-        	<form action="#" method="POST" accept-charset="utf-8" class="formulario">
+        	<form action="#" method="POST" accept-charset="utf-8" class="formulario" name="formulario-usuario">
         		<div>
+                    <h2 class="titulo">Cadastro de Usuário</h2>
         			<div class="grupo">
-        				<input type="text" name="nome" id="nome">
-        				<label class="label" for="nome">Nome Completo:</label>
+        				<input type="text" name="nome" id="nome" required placeholder="Digite o nome completo">
+        				<!--<label class="label" for="nome">Nome Completo:</label>-->
         			</div>
         			<div class="grupo">
-        				<input type="email" id="email" name="email">
-						<label class="label" for="email">E-mail:</label>
+        				<input type="email" id="email" name="email" required placeholder="Digite um e-mail válido">
+						<!--<label class="label" for="email">E-mail:</label>-->
         			</div>
         			<div class="grupo">
-        				<input type="password" id="senha" name="senha">
-						<label class="label" for="senha">Senha:</label>
+        				<input type="password" id="senha" name="senha" required placeholder="Insira uma senha">
+						<!--<label class="label" for="senha">Senha:</label>-->
         			</div>
         			<div class="grupo">
-        				<input type="password" id="senha2" name="senha2">
-						<label class="label" for="senha2">Repetir Senha:</label>
+        				<input type="password" id="senha2" name="senha2" required placeholder="Repita a senha">
+						<!--<label class="label" for="senha2">Repetir Senha:</label>-->
         			</div>
-        			<div>
-        				<input type="radio" name="nivel" id="comum" value="comum">
-						<label for="comum">Comum</label>
-						<input type="radio" name="nivel" id="admin" value="admin">
+        			<div class="grupo radio">
+        				<input type="radio" name="nivel" id="normal" value="normal" required>
+						<label for="normal">Normal</label>
+						<input type="radio" name="nivel" id="admin" value="admin" required>
 						<label for="admin">Administrador</label>
         			</div>
         			<input type="submit" value="Enviar" class="bt-enviar">
